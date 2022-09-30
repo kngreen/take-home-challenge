@@ -69,17 +69,8 @@ $nunito: 'Nunito', helvetica, verdana, nunito;
 $delta-gothic-one: 'Folsom', helvetica, verdana, delta-gothic-one;
 $folsom: 'Folsom', arial;
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: blue;
-
-  &-container {}
-}
-
 *, :after, :before {
-  box-sizing: border-box !important; 
+  box-sizing: border-box !important;
 }
 
 html, body {
