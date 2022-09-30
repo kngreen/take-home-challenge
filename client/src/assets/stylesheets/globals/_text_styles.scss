@@ -1,0 +1,231 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Circular Std;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2;
+    &.center {
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    margin: 20px 0 16px;
+    letter-spacing: -3;
+
+    @include up-to-breakpoint($mobile) {
+        font-size: 48px;
+        margin: 14px 0 10px;
+    }
+}
+h2 {
+    font-size: 48px;
+    margin: 18px 0 14px;
+    letter-spacing: -2;
+    color: #f4f6fd;
+
+    @include up-to-breakpoint($mobile) {
+        font-size: 34px;
+        margin: 6px 0;
+    }
+}
+h3 {
+    font-size: 34px;
+    margin: 16px 0 12px;
+    letter-spacing: -1.4;
+    color: #f0f2f9;
+
+    @include up-to-breakpoint($mobile) {
+        font-size: 28px;
+    }
+}
+h4 {
+    font-size: 24px;
+    margin: 10px 0;
+    letter-spacing: -1;
+    color: #e6e8ef;
+}
+h5 {
+    font-size: 18px;
+    margin: 10px 0;
+    letter-spacing: -0.5;
+    color: #dbdeeb;
+    font-weight: 700;
+}
+h6 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+p, span, ul, li, a {
+    font-family: Nunito;
+    font-weight: lighter;
+    &.black {
+        color: black;
+    }
+    &.white {
+        color: white;
+    }
+}
+
+p, ul, li {
+    line-height: 1.8;
+    font-size: 18px;
+    color: $white;
+
+    &.text-small, &.text-regular, &.text-large, &.text-xl {
+        margin: 0;
+        line-height: 1.2;
+    }
+    &.center {text-align: center}
+    &.text-small {font-size: 15px}
+    &.text-large {font-size: 18px}
+    &.text-xl {font-size: 24px; line-height: 1.6}
+
+    &.emptySection {
+        font-style: italic;
+        color: $off-white;
+        text-align: center;
+        margin: 20px 0 30px;
+    }
+    &.regularMargin {
+        margin: 10px 0;
+        line-height: 1;
+    }
+}
+
+.noMargin {
+    margin: 0 !important;
+}
+
+.noPadding {
+    padding: 0 !important;
+}
+
+label {
+    color: $grey-light;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+th {
+    color: $white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+td {
+    color: $white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid $border-dark;
+}
+
+.pshSubPageHeader {
+    color: $primary;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.pshSectionHeader {
+    color: $white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.pshCardHeader {
+    color: $off-white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.pshPageCardHeader {
+    color: $white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.pshStatisticLabel {
+    color: $primary-dark;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pshStatistic {
+    color: $primary;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.eventSection {
+    border-top: 1px solid $border-dark;
+    padding: 20px 0;
+    margin: 20px 0 40px;
+
+    h3 {
+        margin: 0;
+    }
+
+    &-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        @include up-to-breakpoint($mobile) {
+            display: block;
+            margin: 0;
+
+            button {
+                width: 100% !important;
+                margin: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
