@@ -200,3 +200,40 @@ html, body {
     text-align: center;
     animation: fadeInDownB 2s forwards;
 }
+
+.Explore-back {
+  position: absolute;
+  opacity: .6;
+  top: 40px;
+  left: 40px;
+  width: 60px;
+  height: 60px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.Explore-body-main-nav-right {
+  border: 1px solid #fc0;
+  color: #fc0;
+  text-transform: uppercase;
+  font-family: Circular Std;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.Explore-body-main-nav-left {
+  border: 1px solid #7a7b7d;
+  color: #7a7b7d;
+  text-transform: uppercase;
+  font-family: Circular Std;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .2s;
+}
