@@ -99,6 +99,12 @@ html, body {
   }
 }
 
+// video {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
+
 .CitySelector {
   background: #000;
   height: 100vh;
@@ -129,7 +135,7 @@ html, body {
     width: 100%;
 }
 
-.CitySelector-cities-teal {
+.CitySelector-cities-button-teal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,16 +157,20 @@ html, body {
   // animation: fadeInRightB 2s forwards ease-out;
   // opacity: 0;
   // transform: translateY(200px);
+
+  &:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0,204,255,0.65), 0px 0px 10px #0cf inset;
+  }
 }
 
-.CitySelector-cities-gold {
+.CitySelector-cities-button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   width: 100%;
   height: 70px;
-  border: 1px solid #fc0;
+  border: 1px solid rgb(255, 204, 0);
   box-shadow: 0 0 10px -2px #fc0, 0px 0px 10px #fc0 inset;
   color: #fc0;
   background: rgba(3, 3, 3, 0);
@@ -175,6 +185,9 @@ html, body {
   // animation: fadeInRightB 2s forwards ease-out;
   // opacity: 0;
   // transform: translateY(200px);
+  &:hover {
+    box-shadow: 0px 0px 40px 0px rgb(255, 204, 0, 0.65), 0px 0px 10px #fc0 inset;
+  }
 }
 
 .CitySelector-prompt {
