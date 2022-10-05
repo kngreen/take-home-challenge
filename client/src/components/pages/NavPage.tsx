@@ -3,7 +3,7 @@ import CitySelectorBox from '../elements/CitySelectorBox'
 
 const NavPage = () => {
   return (
-    <div>
+    <div className='CitySelector'>
       <CitySelectorBox></CitySelectorBox>
     </div>
   )
