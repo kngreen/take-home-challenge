@@ -1,7 +1,16 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
+import axios from 'axios'
 
 const ExplorePage = () => {
+
+  const getEvents = () => {
+    const events = axios.get('/v1/events');
+    console.log(events)
+  }
+
+  useEffect(() => getEvents())
+
   const navigate = useNavigate()
 
   return (
